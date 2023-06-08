@@ -1,0 +1,30 @@
+CREATE TABLE phone(id int,name varchar(10),model varchar(10),rom varchar(10),ram varchar(10),colors varchar(10),battery varchar(10),prize bigint,brand varchar(10),no_of_apps int,app_names varchar(10));
+
+SELECT * from phone;
+ALTER TABLE phone ADD COLUMN mgf_date varchar(10),ADD COLUMN company_name varchar(10),ADD COLUMN storage_of_app varchar(10);
+insert into phone values(1, 'redme','redme_10','64_gb','4_gb','gold','5_amph',20000,'redme',10,'whatsapp','may_2022','redme','25_gb');
+insert into phone values(2, 'realme','realme_10','32_gb','2_gb','silver','2_amph',10000,'realme',7,'instragram','june_2020','realme','22_gb');
+insert into phone values(3, 'vivo','vivo_pro','16_gb','2_gb','white','2_amph',8000,'vivo',5,'playstore','jan_2022','vivo','8_gb');
+insert into phone values(4, 'oppo','opp_a15','64_gb','4_gb','red','10_amph',15000,'oppo',25,'google','feb_2019','oppo','28_gb');
+insert into phone values(5, 'poco','poco_10','128_gb','8_gb','black','6_amph',30000,'poco',40,'gallery','mar_2021','poco','50_gb');
+insert into phone values(6, 'iphone','iphone_14','128_gb','8_gb','purple','15_amph',100000,'apple',30,'email','april_2022','apple','50_gb');
+insert into phone values(7, 'iphone','iphone_10','64_gb','2_gb','rose gold','5_amph',50000,'apple',25,'face book','june_2022','apple','45_gb');
+insert into phone values(8, 'moto','moto_g','32_gb','2_gb','gray','5_amph',25000,'moto',20,'email','july_2021','moto','24_gb');
+insert into phone values(9, 'samsung','samsung_10','64_gb','2_gb','black','5_amph',8000,'samsung',30,'camera','sep_2018','samsung','15_gb');
+insert into phone values(10, 'galaxy','galaxy_j2','16_gb','1_gb','gold','5_amph',6000,'galaxy',7,'gallery','may_2015','galaxy','5_gb');
+insert into phone values(11, 'sale','sale_pro','256_gb','16_gb','grey','20_amph',50000,'sale',50,'settings','may_2019','sale','75_gb');
+insert into phone values(12, 'nothing','nothing_10','32_gb','2_gb','black','5_amph',8000,'nothing',10,'bluetooth','jan_2014','nothing','10_gb');
+insert into phone values(13, 'lenevo','lenevo_10 pro','16_gb','2_gb','gold','4_amph',11000,'lenevo',5,'calender','mar_2017','lenevo','15_gb');
+insert into phone values(14, 'lava','lava_14','32_gb','2_gb','pink','5_amph',17000,'lava',9,'calculatror','may_2022','redme','20_gb');
+insert into phone values(15, 'infinix','infinix_11','128_gb','4_gb','green','15_amph',200000,'infinix',20,'share chat','feb_2016','infinix','16_gb');
+insert into phone values(16, 'nokia','nokia','8_gb','2_gb','black','2_amph',5000,'nokia',3,'setting','may_2022','nokia','6_gb');
+insert into phone values(17, 'micromax','micomax','64_gb','2_gb','blue','12_amph',25000,'micromax',12,'youtube','june_2013','micromax','30_gb');
+insert into phone values(18, 'google','google_pixel,'32_gb','4_gb','gold','5_amph',28000,'google',9,'contacts','feb_2022','google','10_gb');
+insert into phone values(19, 'one_plus','ce_3','64_gb','2_gb','sky blue','10_amph',23000,'',10,'telegram','may_2022','redme','25_gb');
+insert into phone values(20, 'techno','phantom_v','256_gb','16_gb','black','20_amph',88000,'techno',50,'','may_2023','techno','75_gb');
+
+select *from phone where colors='gold';
+select *from phone where brand='redme';
+select *from phone where name='vivo';
+select *from phone where app_names='google';
+select *from phone where company_name='oppo';
