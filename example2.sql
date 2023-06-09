@@ -27,3 +27,52 @@ select * from shops where type_shop='medical';
 select * from shops where owner_name='shweta';
 select * from shops where name='max';
 select * from shops where employee_names='abhishek';
+
+UPDATE shops SET location='bangalore' where name='trends';
+update shops set owner_name='deepathi' where name='pavitra' or id=4;
+update shops set type_of_shop='medical' where location='gangavathi' or id=2;
+update shops set size_of_shop=600 where name='pharmacy' or location='gangavathi';
+update shops set employee_name='rudra' where name='TVS' or id=10;
+
+
+select * from shops where id=1 or id=3 or id=5; 
+select * from shops where owner_name='shweta' and owner_name='rekha';
+ select * from shops where type_of_shop='cloth' or type_of_shop='sarees' or type_of_shop='medical'; 
+select * from shops where id=4 and id=5;
+select * from shops where opening_time='11_am' and closing_time='9_pm';
+select * from shops where size_of_shop=600 and owner_name='rekha';
+select * from shops where no_of_employees=10 and no_of_customers=50;
+
+ select * from shops where location='gangavathi' or type_of_shop='sarees' or owner_name='shweta'; 
+ select * from shops where name='ambika' or opening_time='10_am';
+ select * from shops where size_of_shop=1200 or no_of_employees=10 or no_of_customers=100; 
+
+select * from shops where id in(1,6,7,8);
+select * from shops where name in('shweta','rekha');
+select * from shops where location in('bangalore','gangavathi');
+select * from shops where opening_time in('9_am','11_am','10_am');
+select * from shops where no_of_customers in(50,100,500);
+
+select * from shops where id not in(1,2,3,4);
+select * from shops where name not in('shweta','niranjana');
+select * from shops where location not in('bangalore','gangavathi');
+select * from shops where opening_time not in('9_am','11_am','10_am');
+select * from shops where no_of_customers not in(50,500);
+
+select * from shops where id between 1 and 10;
+select * from shops where size_of_shop between 300 and 1200;
+select * from shops where no_of_employees between 5 and 20;
+select * from shops where land_mark  between 'ghandi circle' and 'mahaveer circle';
+select * from shops where color_of_shop between 'white' and 'pink';
+
+delete from shops where id=5;
+delete from shops where color_of_shop='white';
+delete from shops where no_of_employee=5;
+delete from shops where size_of_shop=300;
+delete from shops where location='gangavathi';
+
+
+
+
+
+

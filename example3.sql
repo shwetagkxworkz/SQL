@@ -31,3 +31,50 @@ select * from banks_info where location='gangavathi';
 select * from banks_info where bank_manager_name='niranjana';
 select * from banks_info where type_of_bank='government';
 
+update banks_info set branch_name='bangalore' where bank_name='sbi';
+update banks_info set department_names='deposit' where id=3 and bank_name='central';
+update banks_info set no_of_departments=5 where department_names='loan availability' and no_employee=10;
+update banks_info set no_of_facilities=5 where bank_name='sbi' and no_of_depositor=200 and no_of_creaditor=300;
+update banks_info set branch_name='bangalore' where bank_name='baroda' or no_of_new_account=100;
+update banks_info set timings='9am_4pm' where bank_manager_name='niranjana' or no_of_new_account=200;
+update banks_info set type_of_bank='semigovernment' where bank_name='sbi' or no_of_new_account=200;
+
+select * from banks_info where id=1 and bank_name='sbi';
+select * from banks_info where bank_manager_name='deepa' and department_names='deposit' and bank_name='central';
+select * from banks_info where location='gangavathi' and no_of_employee='10';
+select * from banks_info where no_of_creaditors=300 and no_of_depositor=250;
+select * from banks_info where type_of_bank='government' and no_of_facilities=3;
+
+select * from banks_info where id=10 or bank_name='union';
+select * from banks_info where bank_manager_name='niranjana' or department_names='creaditor' and bank_name='central';
+select * from banks_info where employee_name='shweta' or no_of_employee=30;
+select * from banks_info where no_of_departments=10 or branch_name='sindhnur';
+select * from banks_info where type_of_bank='government' or no_of_facilities=3;
+
+
+select * from banks_info where id in(2,7,9,10);
+select * from banks_info where branch_name in('gangavathi','sindhnur','raichur');
+select * from banks_info where no_of_departments in(5,10,15);
+select * from banks_info where department_names in('deposit','credit');
+select * from banks_info where no_employee in(10,30,20);
+
+select * from banks_info where employee_name not in('shweta','rekha');
+select * from banks_info where location not in('gangavathi','sindhnur','raichur');
+select * from banks_info where type_of_banks not in('government','semi government');
+select * from banks_info where no_of_facilities not in(2,4,5);
+select * from banks_info where no_of_departments not in(5,10);
+
+select * from banks_info where id between 1 and 10;
+select * from banks_info where timings between '10am_4pm' and '10am_5pm';
+select * from banks_info where no_of_depositor between 200 and 440;
+select * from banks_info where no_of_creaditors between 100 and 300;
+select * from banks_info where type_of_bank between'government' and 'non government';
+
+delete from bank_info where id=11;
+delete from bank_info where no_of_departments=10;
+delete from bank_info where no_of_facilities=5;
+delete from bank_info where timings='10am_4pm';
+delete from bank_info where type_of_bank='semi government';
+
+
+
