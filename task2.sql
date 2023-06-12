@@ -49,5 +49,19 @@ select name, substr(name, 1,3) from b_infos;
 select location, substr(location,2,4) from b_infos;
 select manager_name, substr(manager_name,1,4) from b_infos;
 
+select * from b_infos where name like 'b%';
+select * from b_infos where manager_name like 's%';
+select * from b_infos where location like 'g%';
 
+select concat(name , location) from b_infos;
+select concat(id , ifsc) from b_infos;
+select concat(no_depositor_perday , no_creditors_perday) from b_infos;
+
+select ltrim(name) from b_infos;
+select ltrim(location) from b_infos;
+select ltrim(manager_name) from b_infos;
+
+select rtrim(ifsc) from b_infos;
+select rtrim(location) from b_infos;
+select rtrim(manager_name) from b_infos;
 

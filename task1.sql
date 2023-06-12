@@ -44,6 +44,24 @@ select name , substr(name, 1,3) from phones;
 select model ,substr(model, 2,4) from phones;
 select color ,substr(color, 2) from phones;
 
+select * from phones where name like 'r%';
+select * from phones where model like 'o%';
+select * from phones where color like 'w%';
+
+select concat(name,model) from phones;
+select concat(name,prize) from phones;
+select concat(model,prize,battery) from phones;
+
+select ltrim(name) from phones;
+select ltrim(model) from phones;
+select ltrim(color) from phones;
+
+select length(name) from phones;
+
+select rtrim(name) from phones;
+select rtrim(model) from phones;
+select rtrim(color) from phones;
+
 
 
 

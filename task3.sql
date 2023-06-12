@@ -44,5 +44,22 @@ select color, substr(color,2,5) from shop_info;
 select owner_name, substr(owner_name,1,4) from shop_info;
 select name, substr(name,2,4) from shop_info;
 
+select * from shop_info where name like '%a';
+select * from shop_info where color like '%e%';
+select * from shop_info where type_shop like 's%';
+
+select concat(no_customers_perday,no_employees) from shop_info;
+select concat(name,prize_inlaks) from shop_info;
+select concat(type_shop,color) from shop_info;
+
+select ltrim(location) from shop_info;
+select ltrim(type_shop) from shop_info;
+select ltrim(owner_name) from shop_info;
+
+select rtrim(name) from shop_info;
+select rtrim(color) from shop_info;
+select rtrim(owner_name) from shop_info;
+
+
 
 
