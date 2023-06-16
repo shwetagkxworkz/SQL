@@ -39,6 +39,14 @@ insert into hard_disk_info values(8,'infinix','dell',9999,16,false,16,'USB_1,2,3
 insert into hard_disk_info values(9,'realme','disk',6459,2,false,7,'USB_2');
 insert into hard_disk_info values(10,'primebook','san',3999,1,false,4,'USB_4');
 
+select * from laptop_info as l inner join hard_disk_info as h on l.name=h.name;
+select * from laptop_info as l left join hard_disk_info as h on l.name=h.name;
+select * from laptop_info as l right join hard_disk_info as h on l.name=h.name;
+select * from laptop_info as l cross join hard_disk_info as h on l.name=h.name;
+
+
+
+
 create table mobile_info(id int,name varchar(100),prize bigint,color varchar(100) ,size int,model varchar(100),internal_storage int,battery int,foreign key(id) references camera_info(id));
 select * from mobile_info;
 insert into mobile_info values(1,'oppo',15000,'black ',10,'A11',32,4);
@@ -51,6 +59,11 @@ insert into mobile_info values(7,'poco',16000,'purple',9,'p23',16,2);
 insert into mobile_info values(8,'lenovo',9000,'silver',8,'lenovo',16,1);
 insert into mobile_info values(9,'moto',13000,'grey',11,'m17',64,4);
 insert into mobile_info values(10,'nokia',8000,'pink',13,'nokia',8,1);
+
+select * from camera_info as c inner join mobile_info as m on c.id=m.id;
+select * from camera_info as c left join mobile_info as m on c.id=m.id;
+select * from camera_info as c right join mobile_info as m on c.id=m.id;
+select * from camera_info as c cross join mobile_info as m on c.id=m.id;
 
 
 
